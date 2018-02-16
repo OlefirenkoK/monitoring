@@ -1,0 +1,30 @@
+server:
+  host: 0.0.0.0
+  port: 9075
+
+storages:
+  - name: mongo
+    backend: molly.storages.mongodb.MongoDB
+    db: cgames
+    host: 127.0.0.1
+    port: 27017
+    socketTimeoutMS: 5000
+
+  - name: redis
+    backend: molly.storages.redis.Redis
+    db: 0
+
+rkn:
+  provider: 'git'
+  repo_url: 'https://github.com/zapret-info/z-i.git'
+  repo_path: '/tmp/z-i_repo'
+  repo_timeout: 1200
+  branch: 'master'
+
+mirrors:
+  provider: 'git'
+  repo_url: 'https://__flash__:usehub41@bitbucket.org/pokerdom/pokerdom_mirrors.git'
+  repo_path: '/tmp/mirrors_repo'
+  repo_timeout: 20
+  branch: 'PD-2070-test-branch'
+  mirrors_path: 'redirector/mirrors.json'

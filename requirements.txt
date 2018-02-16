@@ -1,0 +1,4 @@
+motor==1.1
+aioredis==0.3.1
+gitpython==2.1.8
+molly

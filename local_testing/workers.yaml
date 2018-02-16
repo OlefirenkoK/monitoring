@@ -1,0 +1,3 @@
+worker_test1:
+    cls: rkn.workers.rkn_updater.RknUpdaterWorker
+    timeout: 3
